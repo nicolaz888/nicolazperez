@@ -12115,7 +12115,7 @@ textarea.form-control {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 .ftco-section .nav-pills .nav-link.active,
 .ftco-section .nav-pills .nav-link:hover {
