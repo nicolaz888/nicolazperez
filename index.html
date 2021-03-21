@@ -57,16 +57,34 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Servicios</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+          <li class="nav-item active" id="navItemHome"><a href="#home" class="nav-link" onclick="
+            
+            document.getElementById('navItemHome').classList.add('active');
+            document.getElementById('navItemServicios').classList.remove('active');
+            document.getElementById('navItemContacto').classList.remove('active');
+
+            ">Home</a></li>
+          <li class="nav-item" id="navItemServicios"><a href="#services" class="nav-link" onclick="
+            
+            document.getElementById('navItemHome').classList.remove('active');
+            document.getElementById('navItemServicios').classList.add('active');
+            document.getElementById('navItemContacto').classList.remove('active');
+
+            ">Servicios</a></li>
+          <li class="nav-item" id="navItemContacto"><a href="#contact" class="nav-link" onclick="
+            
+            document.getElementById('navItemHome').classList.remove('active');
+            document.getElementById('navItemServicios').classList.remove('active');
+            document.getElementById('navItemContacto').classList.add('active');
+
+            ">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- END nav -->
 
-  <div class="hero-wrap js-fullheight">
+  <div class="hero-wrap js-fullheight" id="home">
     <div class="overlay"></div>
     <div class="container-fluid px-0">
       <div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-end">

@@ -274,6 +274,5 @@
     fixedContentPos: false
   });
 
-
 })(jQuery);
 
