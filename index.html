@@ -166,7 +166,7 @@
       <div class="row justify-content-center mb-5 pb-3">
         <div class="col-md-7 text-center heading-section ftco-animate">
           <h2 class="mb-4">Contacto</h2>
-          <p>Escríbenos! estamos super atentos a cualquier solicitud, duda, inconveniente que tengas</p>
+          <p>Escríbenos! estamos súper atentos a cualquier solicitud, duda o inconveniente que tengas</p>
         </div>
       </div>
 
@@ -182,7 +182,7 @@
 
       <div class="row block-9">
         <div class="col-md-8 mx-auto">
-          <form action="#">
+          <!-- <form action="#">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Tu nombre">
             </div>
@@ -198,7 +198,38 @@
             <div class="form-group text-center">
               <input type="submit" value="Enviar" class="btn btn-primary py-3 px-5">
             </div>
+          </form> -->
+
+          <!-- <form action="https://formspree.io/f/mknkwgrd" method="POST">
+            <label>
+              Your email:
+              <input type="email" name="_replyto">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+
+            your other form fields go here
+
+            <button type="submit">Send</button>
+          </form> -->
+
+          <form action="https://formspree.io/f/mknkwgrd" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <input type="email" name="_replyto" class="form-control" placeholder="Tu correo">
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="form-group text-center">
+              <input type="submit" value="Enviar" class="btn btn-primary py-3 px-5">
+            </div>
           </form>
+
         </div>
       </div>
 
